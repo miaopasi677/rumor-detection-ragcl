@@ -1,0 +1,35 @@
+# 官方源码（版权归原作者，请按 README 自行 clone，不纳入本仓库）
+/RAGCL/Main/
+/RAGCL/Log/record_*.py
+/RAGCL/README.md
+/RAGCL/centrality.py
+/AD-GSCL/
+/BiGCN/
+/UWeibo/
+/DRWeibo/
+
+# 数据集与解压产物（体积大，且需从官方渠道获取）
+/Data.zip
+/Data/
+/RAGCL/Data/
+/RAGCL/Model/
+/papers/
+*.7z
+*.zip
+
+# 本地二进制 wheel（2 GB）
+/wheels/
+*.whl
+
+# Python 环境
+/.venv/
+/.venv-gpu/
+/RAGCL/.venv/
+/RAGCL/.venv-gpu/
+**/__pycache__/
+*.pyc
+
+# 失败/中断的并行实验残留（保留日志即可，不纳入结果）
+/parallel_runs/
+RAGCL/Data/DRWeiboV3/dataset*/
+*.pt

@@ -1,0 +1,32 @@
+{
+  "started": "20261110_195749",
+  "complete_runs_before": 6,
+  "remaining": 4,
+  "workers": [
+    {
+      "index": 0,
+      "runs": 2,
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_ragcl_shared_cache.py --dataset DRWeiboV3 --unsup_dataset UWeibo --gpu 0 --runs 2 --epochs 100",
+      "console": "worker_00_20261110_195749.log",
+      "raw_root": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\parallel_shared\\raw\\worker_00",
+      "started": "2026-11-10T19:57:49",
+      "exit_code": 0,
+      "elapsed_seconds": 5402.7
+    },
+    {
+      "index": 1,
+      "runs": 2,
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_ragcl_shared_cache.py --dataset DRWeiboV3 --unsup_dataset UWeibo --gpu 0 --runs 2 --epochs 100",
+      "console": "worker_01_20261110_195749.log",
+      "raw_root": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\parallel_shared\\raw\\worker_01",
+      "started": "2026-11-10T19:57:52",
+      "exit_code": 0,
+      "elapsed_seconds": 5399.7
+    }
+  ],
+  "new_logs": [
+    "2026-11-10 19-58-57.json",
+    "2026-11-10 19-59-04.json"
+  ],
+  "all_succeeded": true
+}

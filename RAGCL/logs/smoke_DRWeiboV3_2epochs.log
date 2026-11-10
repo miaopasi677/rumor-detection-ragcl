@@ -1,0 +1,25 @@
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\37109\AppData\Roaming\nltk_data...
+[nltk_data]   Unzipping tokenizers\punkt.zip.
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\37109\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+total words: 6965
+Processing...
+Done!
+Processing...
+Done!
+Processing...
+Done!
+Traceback (most recent call last):
+  File "C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\RAGCL\Main\main(sup).py", line 199, in <module>
+    val_error, log_info, log_record = test_and_log(model, val_loader, test_loader, num_classes,
+  File "C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\RAGCL\Main\main(sup).py", line 105, in test_and_log
+    test(model, val_loader, num_classes, device)
+  File "C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\RAGCL\Main\main(sup).py", line 89, in test
+    precs.append(round(precision_score(y_true == label, y_pred == label, labels=True), 4))
+  File "C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\RAGCL\.venv-gpu\lib\site-packages\sklearn\utils\_param_validation.py", line 204, in wrapper
+    validate_parameter_constraints(
+  File "C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\RAGCL\.venv-gpu\lib\site-packages\sklearn\utils\_param_validation.py", line 96, in validate_parameter_constraints
+    raise InvalidParameterError(
+sklearn.utils._param_validation.InvalidParameterError: The 'labels' parameter of precision_score must be an array-like or None. Got True instead.

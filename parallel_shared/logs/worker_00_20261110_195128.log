@@ -1,0 +1,10 @@
+command: C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\RAGCL\.venv-gpu\Scripts\python.exe -u C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\run_ragcl_shared_cache.py --dataset DRWeiboV3 --unsup_dataset UWeibo --gpu 0 --runs 2 --epochs 100
+RAGCL_RAW_ROOT=C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\parallel_shared\raw\worker_00
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\37109\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\37109\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+total words: 6965
+[shared-cache] reusing 3 processed data.pt caches; raw root=C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\parallel_shared\raw\worker_00

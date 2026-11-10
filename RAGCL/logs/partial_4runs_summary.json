@@ -1,0 +1,33 @@
+{
+  "log_json": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\Log\\2026-11-09 22-02-34.json",
+  "dataset": "DRWeiboV3",
+  "epochs": 100,
+  "runs": 10,
+  "per_run": [
+    {
+      "run": 0,
+      "final10_mean_acc": 0.8829,
+      "best_epoch_acc": 0.8965
+    },
+    {
+      "run": 1,
+      "final10_mean_acc": 0.879,
+      "best_epoch_acc": 0.8949
+    },
+    {
+      "run": 2,
+      "final10_mean_acc": 0.8772,
+      "best_epoch_acc": 0.8949
+    },
+    {
+      "run": 3,
+      "final10_mean_acc": 0.88,
+      "best_epoch_acc": 0.8932
+    }
+  ],
+  "final10_mean_acc_avg": 0.8798,
+  "final10_mean_acc_population_sd": 0.0021,
+  "final10_mean_acc_max": 0.8829,
+  "best_epoch_acc_avg": 0.8949,
+  "best_epoch_acc_max": 0.8965
+}

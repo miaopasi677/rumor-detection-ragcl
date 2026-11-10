@@ -1,0 +1,8 @@
+[nltk_data] Error loading punkt: Remote end closed connection without
+[nltk_data]     response
+Collecting official DRWeiboV3 + 20k UWeibo sentences...
+Sentence count: 1410307
+Training word2vec with official settings (30 epochs)...
+Saved: C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\RAGCL\Model\w2v_DRWeiboV3_naive_20000_200.model
+Vocabulary size: 6964
+Elapsed seconds: 990.9

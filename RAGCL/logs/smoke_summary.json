@@ -1,0 +1,18 @@
+{
+  "log_json": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\Log\\2026-11-09 21-29-05.json",
+  "dataset": "DRWeiboV3",
+  "epochs": 2,
+  "runs": 1,
+  "per_run": [
+    {
+      "run": 0,
+      "final10_mean_acc": 0.7119,
+      "best_epoch_acc": 0.8303
+    }
+  ],
+  "final10_mean_acc_avg": 0.7119,
+  "final10_mean_acc_population_sd": 0.0,
+  "final10_mean_acc_max": 0.7119,
+  "best_epoch_acc_avg": 0.8303,
+  "best_epoch_acc_max": 0.8303
+}
