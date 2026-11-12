@@ -1,0 +1,17 @@
+[2026-11-12T00:55:47] complete=[] targets=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] workers=1
+[2026-11-12T02:42:34] run 0 exit=0 acc=0.8751 elapsed=6353.6s error=-
+[2026-11-12T04:02:21] run 1 exit=0 acc=0.8708 elapsed=4766.5s error=-
+[2026-11-12T05:18:59] run 2 exit=0 acc=0.8711 elapsed=4591.2s error=-
+[2026-11-12T06:36:32] run 3 exit=0 acc=0.8727 elapsed=4647.9s error=-
+[2026-11-12T07:53:16] run 4 exit=0 acc=0.8684 elapsed=4599.5s error=-
+[2026-11-12T09:13:25] run 5 exit=0 acc=0.8671 elapsed=4802.7s error=-
+[2026-11-12T10:44:39] run 6 exit=0 acc=0.8737 elapsed=5467.5s error=-
+[2026-11-12T10:54:29] run 7 exit=1 acc=None elapsed=590.2s error=nonzero exit 1; see console_log
+=== RESUME at 2026-11-12 11:52:12 after user GPU test ===
+[2026-11-12T11:52:12] complete=[0, 1, 2, 3, 4, 5, 6] targets=[7, 8, 9] workers=1
+=== RESUME-2 at 2026-11-12 11:54:59 (managed background) ===
+[2026-11-12T11:55:00] complete=[0, 1, 2, 3, 4, 5, 6] targets=[7, 8, 9] workers=1
+[2026-11-12T13:24:11] run 7 exit=0 acc=0.874 elapsed=5345.5s error=-
+[2026-11-12T14:43:35] run 8 exit=0 acc=0.8695 elapsed=4756.8s error=-
+[2026-11-12T16:02:40] run 9 exit=0 acc=0.877 elapsed=4733.5s error=-
+[2026-11-12T16:02:40] SUMMARY status=complete n=10 mean=0.8719 sd=0.003

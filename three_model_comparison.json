@@ -1,0 +1,191 @@
+{
+  "generated_at": "2026-11-12T16:05:10",
+  "dataset": "DRWeiboV3（官方 Data.zip）",
+  "split": "802（RAGCL Main/sort.py, random.seed(1234)；train 4829 / val 1 / test 1208）",
+  "protocol": "10 runs x 100 epochs；主指标 = 每 run 最后 10 个 epoch 的 Test ACC 均值（官方 record_sup.py cal_mean=-10）；SD 为 10 run 的总体标准差",
+  "headline_rule": "不宣称复现到论文数值、不承诺录用、未为涨点调参",
+  "models": [
+    {
+      "model": "RAGCL (AAAI'24)",
+      "role": "主 baseline",
+      "features": "官方 word2vec（naive 分词，UWeibo 20k 固定子集，200 维）",
+      "acc": {
+        "n": 10,
+        "mean": 0.8812,
+        "population_sd": 0.0045,
+        "sem": 0.0014,
+        "ci95_normal": [
+          0.8784,
+          0.884
+        ],
+        "per_run": [
+          0.8829,
+          0.879,
+          0.8772,
+          0.88,
+          0.8817,
+          0.8868,
+          0.8797,
+          0.8763,
+          0.8768,
+          0.8912
+        ]
+      },
+      "macro_f1": {
+        "n": 10,
+        "mean": 0.8801,
+        "population_sd": 0.0046,
+        "sem": 0.0014,
+        "ci95_normal": [
+          0.8773,
+          0.8829
+        ],
+        "per_run": [
+          0.8818,
+          0.878,
+          0.8762,
+          0.8791,
+          0.8808,
+          0.8857,
+          0.8789,
+          0.8749,
+          0.8754,
+          0.8902
+        ]
+      },
+      "source_logs": [
+        "2026-11-09 22-02-34.json",
+        "2026-11-10 18-48-17.json",
+        "2026-11-10 19-16-23.json",
+        "2026-11-10 19-58-57.json",
+        "2026-11-10 19-59-04.json"
+      ],
+      "notes": "官方 main(sup).py 源码未修改；复现值低于论文 0.894，如实记录。"
+    },
+    {
+      "model": "AD-GSCL",
+      "role": "新一代对比",
+      "features": "与 RAGCL 完全相同的 word2vec / 分词 / 无标签语料",
+      "acc": {
+        "n": 10,
+        "mean": 0.8817,
+        "population_sd": 0.005,
+        "sem": 0.0016,
+        "ci95_normal": [
+          0.8786,
+          0.8848
+        ],
+        "per_run": [
+          0.8915,
+          0.8841,
+          0.8757,
+          0.8767,
+          0.8815,
+          0.8805,
+          0.874,
+          0.8839,
+          0.8864,
+          0.8829
+        ]
+      },
+      "macro_f1": {
+        "n": 10,
+        "mean": 0.8811,
+        "population_sd": 0.0051,
+        "sem": 0.0016,
+        "ci95_normal": [
+          0.8779,
+          0.8842
+        ],
+        "per_run": [
+          0.8909,
+          0.8835,
+          0.8747,
+          0.8762,
+          0.8811,
+          0.8796,
+          0.8734,
+          0.8833,
+          0.8859,
+          0.8823
+        ]
+      },
+      "source_logs": [
+        "2026-11-11 00-55-57.json",
+        "2026-11-11 01-04-56.json",
+        "2026-11-11 01-13-54.json",
+        "2026-11-11 01-22-49.json",
+        "2026-11-11 01-31-40.json",
+        "2026-11-11 01-40-34.json",
+        "2026-11-11 01-49-25.json",
+        "2026-11-11 01-58-20.json",
+        "2026-11-11 02-07-09.json",
+        "2026-11-11 02-16-11.json"
+      ],
+      "notes": "为严格可比，未用官方默认 jieba + UWeiboV2，改为 naive + UWeibo；仅模型/损失不同。"
+    },
+    {
+      "model": "BiGCN (AAAI'20)",
+      "role": "经典对照（适配版）",
+      "features": "自建 jieba top-5000 词袋（TRAIN-only），非作者原词表",
+      "acc": {
+        "n": 10,
+        "mean": 0.8719,
+        "population_sd": 0.003,
+        "sem": 0.0009,
+        "ci95_normal": [
+          0.8701,
+          0.8738
+        ],
+        "per_run": [
+          0.8751,
+          0.8708,
+          0.8711,
+          0.8727,
+          0.8684,
+          0.8671,
+          0.8737,
+          0.874,
+          0.8695,
+          0.877
+        ]
+      },
+      "macro_f1": {
+        "n": 10,
+        "mean": 0.8717,
+        "population_sd": 0.0029,
+        "sem": 0.0009,
+        "ci95_normal": [
+          0.8699,
+          0.8736
+        ],
+        "per_run": [
+          0.8748,
+          0.8706,
+          0.8709,
+          0.8724,
+          0.8682,
+          0.8669,
+          0.8734,
+          0.8739,
+          0.8694,
+          0.8768
+        ]
+      },
+      "source_logs": [
+        "BiGCN/Log/bigcn_run00_2026-11-12 00-56-39.json",
+        "BiGCN/Log/bigcn_run01_2026-11-12 02-42-53.json",
+        "BiGCN/Log/bigcn_run02_2026-11-12 04-02-26.json",
+        "BiGCN/Log/bigcn_run03_2026-11-12 05-19-02.json",
+        "BiGCN/Log/bigcn_run04_2026-11-12 06-36-36.json",
+        "BiGCN/Log/bigcn_run05_2026-11-12 07-53-20.json",
+        "BiGCN/Log/bigcn_run06_2026-11-12 09-13-30.json",
+        "BiGCN/Log/bigcn_run07_2026-11-12 11-55-04.json",
+        "BiGCN/Log/bigcn_run08_2026-11-12 13-24-17.json",
+        "BiGCN/Log/bigcn_run09_2026-11-12 14-43-45.json"
+      ],
+      "notes": "官方 Net/TDrumorGCN/BUrumorGCN 类未改；5-fold CV、EarlyStopping、200 epoch 被统一协议替换。与论文数字不可直接比较。",
+      "status": "complete"
+    }
+  ]
+}

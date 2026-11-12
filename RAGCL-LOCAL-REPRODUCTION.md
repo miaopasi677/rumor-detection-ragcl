@@ -197,9 +197,63 @@ ACC 样本标准差 0.00475，SEM 0.00150，正态近似 95% CI **[0.8782, 0.884
 
 复核命令：`python compute_final_metrics.py`（只读官方 JSON，生成 `RAGCL/logs/final_ragcl_drweibo_full_metrics.json`）。
 
-## 6. 第二步尚未开始（如实记录）
+## 6. 第二步：AD-GSCL 与 BiGCN 对比（进行中）
 
-- AD-GSCL（`819fe342…`）、原始 BiGCN（`5779f2cf…`）代码已下载并固定 commit，**尚未运行任何实验**，因此没有任何对比数字。
+### 6.1 AD-GSCL 已完成（10 / 10 run）
+
+- 固定 commit `819fe342…`，`main(sup).py` 官方源码未改；沿用 `run_adgscl_safe.py` 包装官方 `sort.py` 的批量删除。
+- **统一口径**：AD-GSCL 官方默认是 `jieba + UWeiboV2`，与 RAGCL 输入不一致。为严格可比，改为 `--tokenize_mode naive --unsup_dataset UWeibo`，复用同一份 `w2v_DRWeiboV3_naive_20000_200.model`，使差异只来自模型/损失。此偏差已写入脚本注释与 manifest。
+- 802 划分、10 run × 100 epoch、官方后 10 epoch 均值口径全部与 RAGCL 一致。
+- 真实结果：`final10_mean_acc_avg = 0.8817 ± 0.0050`，macro-F1 `0.8811 ± 0.0051`；10 个 run 的 `exit_code` 全为 0，逐 run 耗时约 529–542 秒，证据见 `adgscl_manifest.json` 与 `AD-GSCL/logs/final_adgscl_drweibo_summary.json`。
+- 与 RAGCL `0.8812 ± 0.0045` 几乎持平（差值 0.0005，远小于两者标准差），如实记录，不做「谁更好」的过度解读。
+
+### 6.2 BiGCN 口径冲突与用户决策
+
+官方 BiGCN（`5779f2cf…`）是 Weibo/TD-RvNN 格式、5000 维词袋、5-fold CV、200 epoch + EarlyStopping、torch 1.4 / PyG 1.3.2，与 RAGCL/AD-GSCL 的 DRWeiboV3 + word2vec + 802 + 10×100 完全不同。经确认，采用**统一到 DRWeiboV3** 的口径：
+
+- `build_bigcn_drweibo.py`：复用 RAGCL `Main/sort.py` 的 802 划分文件名（不重新划分），在 **TRAIN-only** 文本上用 jieba 建 top-5000 词袋，输出 6037 个 `BiGCN/data/DRWeiboV3graph/*.npz`（压缩后 24.3 MB）、`vocab.json`、`split.json`。划分 train 4829 / val 1 / test 1208，标签 3185 / 2852。
+- **必须声明的适配**：5000 维词袋是本次自建，**不是作者原始词表**；5-fold CV / EarlyStopping / 200 epoch 被 802 / 固定 100 epoch / 无早停替换；`num_workers 10→0`、`cuda:1→cuda:0`；DataLoader shuffle 顺序按统一协议。因此该数字**不能**与论文中 Weibo 上的 BiGCN 数值直接比较。
+- `run_bigcn_drweibo.py`：用 `ast` 从官方 `BiGCN_Weibo.py` 抽取 `TDrumorGCN` / `BUrumorGCN` / `Net` 三个类原样执行（避开模块级训练循环），**模型结构与超参未改**：`Net(5000,64,64)`、lr 0.0005、weight_decay 1e-4、batch 16、BU conv lr÷5、nll_loss。评估改为 802 划分 + 10 run × 100 epoch + 后 10 epoch 均值。
+
+### 6.3 工程问题与修复（均不改变模型数学）
+
+1. **稠密特征缓存 7.6 GB**：6037 张图的 `x` 若全部缓存为 dense 会占约 7.6 GB。改为只缓存 scipy CSR（约 40 MB），`__getitem__` 时才把单图转 dense。
+2. **官方 forward 在 CPU 分配大块临时张量**：官方 `th.zeros(n, 5000).to(device)` 每 batch 在 CPU 分配 20–32 MB 共 4 次。3–4 进程并发时物理内存（15.7 GB，空闲约 5.8 GB）被耗尽，报 `DefaultCPUAllocator: not enough memory` 或 `0xC0000005`。修复方式是在加载官方类时传入一个薄 `th` 代理，让 `zeros()` 直接在 GPU 上分配——`torch.zeros(n,m,device=cuda)` 与 `torch.zeros(n,m).to(cuda)` 数值完全相同，只改变临时张量所在设备。官方源码文件没有任何改动。
+3. **并发数（实测后回退为单进程）**：4 / 3 进程触发 OOM；2 进程虽然把 GPU 利用率从单进程约 12% 提到约 85%，但系统 commit charge 达 30.3 GB（物理内存仅 15.7 GB），进程 RSS 从 2.1 GB 被换出到 1.3 GB，触发分页，单 epoch 从约 62 秒恶化到 >141 秒，总吞吐反而**低于串行**。因此最终改为 **1 worker 串行**：单进程约 2.1 GB RSS、空闲约 4.3 GB、约 62 秒/epoch。5000 维稠密节点特征使该工作负载受内存带宽限制，在本机 16 GB 内存下多进程不划算。
+4. **断点续跑**：`resume_bigcn_runs.py` 每个 run 独立进程 + `--runs 1`，扫描 `BiGCN/Log/` 中 `epochs_recorded == 101` 的官方 JSON 判定完成，写 `bigcn_manifest.json`（命令、耗时、exit code、来源日志）与 `BiGCN/logs/final_bigcn_drweibo_summary.json`。2026-11-11 10:54 的 3-worker 批次在会话中断时整个进程树被杀，**没有任何 run 落盘**；2026-11-12 00:28 的 2-worker 批次因分页过慢被主动止损（同样无 run 落盘，不复用任何中途结果）；最终按 1 worker 串行重跑全部 10 run。中途失败/被杀的批次都不计入任何统计。
+5. **运行环境**：后台 Bash 通道报 `/tmp` 缺失与 shim 权限错误（exit 125），改用前台启动后由超时机制自动转后台；`| tee` 会掩盖 Python 的真实退出码，因此驱动内部用 `subprocess.run` 直接重定向并记录 `returncode`。
+
+### 6.3.1 2026-11-12 中断与断点恢复（如实记录）
+
+- 00:55 启动的 1-worker 串行批次稳定跑到 10:44，完成 **run0–run6 共 7 个 run**，全部 `exit_code=0`、官方 JSON 中 `epochs_recorded=101`：后 10 epoch Test ACC 依次为 `0.8751 / 0.8708 / 0.8711 / 0.8727 / 0.8684 / 0.8671 / 0.8737`。这 7 份结果予以保留，**不重跑、不修改**。
+- 10:54 **run7** 在 `evaluate()` 加载单图时抛出 `numpy.core._exceptions._ArrayMemoryError: Unable to allocate 2.94 MiB for an array with shape (154, 5000)`。原因是用户当时进行 GPU 测试，系统内存被占满；同一份代码此前已连续稳定完成 7 个 run，故判定为环境性 OOM，不是模型或脚本缺陷。**run8** 只打印到 `epoch 000`，随后用户主动停止整批进程。run7 / run8 均无完整 JSON，**不计入任何统计**，重跑时从 epoch 0 开始，不复用中间结果。
+- 恢复前复核：`torch 1.12.0+cu113`、`cuda_available=True`、`device_count=1`、`cuda:0 = NVIDIA GeForce RTX 3080 Laptop GPU`（驱动 471.41，16 GB），GPU 矩阵乘通过；无残留训练进程，空闲物理内存 3.0 GB。
+- 11:55 以 `--start 0 --end 10 --workers 1` 重启，`scan_completed()` 自动识别 `complete=[0..6]`、`targets=[7,8,9]`；驱动日志改用 `tee -a` 追加，保留 00:55 至今的完整时间线。
+- **启动方式变化**：11:52 首次续跑沿用「前台启动 + 超时自动转后台」，本次在 120 秒超时被 `SIGTERM`，连同刚启动的 run7 子进程一起被杀（仅到 epoch 000）。改用工具托管的后台通道后启动成功。此前记录的「前台自动转后台可用」不再作为本机可靠路径。
+- 13:24 / 14:43 / 16:02 依次完成 run7 / run8 / run9（均 `exit_code=0`，后 10 epoch ACC `0.8740 / 0.8695 / 0.8770`），16:02:40 写出 `BiGCN/logs/final_bigcn_drweibo_summary.json`：`status=complete`、`complete_runs=10`、`missing_runs=[]`。复核 10 份官方 JSON 全部 `epochs_recorded=101`。中途被杀/失败的 run7、run8 批次及 11:52 的短命批次均无完整 JSON，未计入任何统计。
+
+### 6.4 三模型最终对比结果（2026-11-12 16:03 完成）
+
+`compare_three_models.py` 只读真实日志生成 `three_model_comparison.json` 与 `COMPARISON-DRWEIBOV3.md`。三个模型 **各 10/10 完整 run**，全部为 DRWeiboV3 / 802 划分 / 10 run × 100 epoch / 官方后 10 epoch Test ACC 均值口径：
+
+| 模型 | 角色 | Test ACC (mean ± SD) | 95% CI | macro-F1 |
+|---|---|---|---|---|
+| RAGCL (AAAI'24) | 主 baseline | **0.8812 ± 0.0045** | 0.8784–0.8840 | 0.8801 ± 0.0046 |
+| AD-GSCL | 新一代对比 | **0.8817 ± 0.0050** | 0.8786–0.8848 | 0.8811 ± 0.0051 |
+| BiGCN (AAAI'20) | 经典对照（适配版） | **0.8719 ± 0.0030** | 0.8701–0.8738 | 0.8717 ± 0.0029 |
+
+BiGCN 逐 run 后 10 epoch ACC：`0.8751 / 0.8708 / 0.8711 / 0.8727 / 0.8684 / 0.8671 / 0.8737 / 0.8740 / 0.8695 / 0.8770`，独立重算均值 `0.871940`、总体 SD `0.002957`，与汇总脚本一致。
+
+**读数说明（避免过度解读）**：
+
+- RAGCL 与 AD-GSCL 差值仅 `0.0005`，远小于两者 run 间 SD（0.0045 / 0.0050），应视为**基本持平**，不宣称「AD-GSCL 更好」。
+- BiGCN 比前两者低约 `0.0093–0.0098`（约 2–3 倍 SD），但它是**适配版**：自建词袋 + 802 划分 + 固定 100 epoch，输入特征与评估协议都不同，不能据此得出「BiGCN 模型弱于 RAGCL」的论文级结论，更不能与论文中 Weibo 上的 BiGCN 数值直接比较。
+- 所有数字来自 `RAGCL/Log/*.json`、`AD-GSCL/Log/*.json`、`BiGCN/Log/*.json`，逐 run 证据见 `bigcn_manifest.json` / `adgscl_manifest.json` / `resume_manifest.json`；全程未为涨点调参，未填任何推测值。
+- CI 统一按总体标准差（n，官方口径）的 SEM 计算：`mean ± 1.96 × SD/√10`。`final_ragcl_drweibo_full_metrics.json` 内另有一份按样本标准差（n−1）算的稍宽 CI `0.8782–0.8841`，仅为统计约定差异，均值与 SD 完全一致，不改变任何结论。
+
+### 6.5 仍未开展 / 待确认
+
 - 查新尚未开展；交接摘要里的时间感知评测、LLM 注入鲁棒性两个方向仍只是候选，不能当作「已确认无人做过」。
+- 第二步产物（AD-GSCL / BiGCN 的运行脚本、官方日志、`*_manifest.json`、三模型对比表）**尚未提交 GitHub**；第一步代码已在 `miaopasi677/rumor-detection-ragcl` 私有仓库（`37da83f…`）。是否做第二次提交待负责人确认。
 - 数据侧已确认：只有 DRWeiboV3 带完整时间戳（30 分钟 / 1 小时 / 6 小时 / 24 小时检查点可行，但 25% 源帖 30 分钟内无评论）；Weibo / Twitter15 / Twitter16 的 tf-idf 发布包无时间字段，不能默认做时间切分。
 - 待客户/负责人确认：第二阶段范围与报价、署名与代码归属、是否要求严格单进程重跑 10 run、AD-GSCL 是否需要其预训练权重与半监督设置。

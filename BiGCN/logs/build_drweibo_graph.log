@@ -1,0 +1,13 @@
+split sizes: {'train': 4829, 'val': 1, 'test': 1208}
+Building prefix dict from the default dictionary ...
+Dumping model to file cache C:\Users\37109\AppData\Local\Temp\jieba.cache
+Loading model cost 0.558 seconds.
+Prefix dict has been built successfully.
+vocab size: 5000
+built 1000/6037 graphs
+built 2000/6037 graphs
+built 3000/6037 graphs
+built 4000/6037 graphs
+built 5000/6037 graphs
+built 6000/6037 graphs
+done: 6037 graphs, 24.3 MB npz

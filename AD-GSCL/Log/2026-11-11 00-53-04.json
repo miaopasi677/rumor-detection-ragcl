@@ -1,0 +1,121 @@
+{
+    "dataset": "DRWeiboV3",
+    "unsup train size": 20000,
+    "tokenize mode": "naive",
+    "runs": 1,
+    "split": "802",
+    "batch size": 32,
+    "undirected": true,
+    "model": "ResGCN",
+    "n layers feat": 1,
+    "n layers conv": 3,
+    "n layers fc": 2,
+    "vector size": 200,
+    "hidden": 128,
+    "global pool": "sum",
+    "skip connection": true,
+    "res branch": "BNConvReLU",
+    "dropout": 0.3,
+    "edge norm": true,
+    "t": 0.3,
+    "lr": 0.001,
+    "epochs": 2,
+    "weight decay": 0.0001,
+    "lamda": 0.001,
+    "gamma": 0.001,
+    "use unlabel": false,
+    "use unsup loss": true,
+    "k": 10000,
+    "record": [
+        {
+            "run": 0,
+            "val accs": [
+                1.0,
+                0.0,
+                0.0
+            ],
+            "test accs": [
+                0.476,
+                0.822,
+                0.832
+            ],
+            "test precs": [
+                [
+                    0.0,
+                    0.476
+                ],
+                [
+                    0.8483,
+                    0.7961
+                ],
+                [
+                    0.8479,
+                    0.8153
+                ]
+            ],
+            "test recs": [
+                [
+                    0.0,
+                    1.0
+                ],
+                [
+                    0.8041,
+                    0.8417
+                ],
+                [
+                    0.8278,
+                    0.8365
+                ]
+            ],
+            "test f1s": [
+                [
+                    0.0,
+                    0.645
+                ],
+                [
+                    0.8256,
+                    0.8183
+                ],
+                [
+                    0.8377,
+                    0.8258
+                ]
+            ],
+            "test micro metric": [
+                [
+                    0.476,
+                    0.476,
+                    0.476
+                ],
+                [
+                    0.822,
+                    0.822,
+                    0.822
+                ],
+                [
+                    0.832,
+                    0.832,
+                    0.832
+                ]
+            ],
+            "test macro metric": [
+                [
+                    0.238,
+                    0.5,
+                    0.3225
+                ],
+                [
+                    0.8222,
+                    0.8229,
+                    0.8219
+                ],
+                [
+                    0.8316,
+                    0.8322,
+                    0.8317
+                ]
+            ],
+            "mean acc": 0.71
+        }
+    ]
+}

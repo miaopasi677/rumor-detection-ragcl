@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-11-11T02:25:00",
+  "model": "AD-GSCL main(sup)",
+  "protocol": "DRWeiboV3 / 802 split / 10 runs x 100 epochs / naive w2v shared with RAGCL",
+  "source_logs": [
+    "2026-11-11 00-55-57.json",
+    "2026-11-11 01-04-56.json",
+    "2026-11-11 01-13-54.json",
+    "2026-11-11 01-22-49.json",
+    "2026-11-11 01-31-40.json",
+    "2026-11-11 01-40-34.json",
+    "2026-11-11 01-49-25.json",
+    "2026-11-11 01-58-20.json",
+    "2026-11-11 02-07-09.json",
+    "2026-11-11 02-16-11.json"
+  ],
+  "complete_runs": 10,
+  "per_run": [
+    {
+      "source_log": "2026-11-11 00-55-57.json",
+      "run": 0,
+      "epochs_recorded": 101,
+      "final10_mean_acc": 0.8915,
+      "best_epoch_acc": 0.9007,
+      "official_mean_acc": 0.891
+    },
+    {
+      "source_log": "2026-11-11 01-04-56.json",
+      "run": 0,
+      "epochs_recorded": 101,
+      "final10_mean_acc": 0.8841,
+      "best_epoch_acc": 0.9031,
+      "official_mean_acc": 0.884
+    },
+    {
+      "source_log": "2026-11-11 01-13-54.json",
+      "run": 0,
+      "epochs_recorded": 101,
+      "final10_mean_acc": 0.8757,
+      "best_epoch_acc": 0.899,
+      "official_mean_acc": 0.876
+    },
+    {
+      "source_log": "2026-11-11 01-22-49.json",
+      "run": 0,
+      "epochs_recorded": 101,
+      "final10_mean_acc": 0.8767,
+      "best_epoch_acc": 0.8916,
+      "official_mean_acc": 0.877
+    },
+    {
+      "source_log": "2026-11-11 01-31-40.json",
+      "run": 0,
+      "epochs_recorded": 101,
+      "final10_mean_acc": 0.8816,
+      "best_epoch_acc": 0.8982,
+      "official_mean_acc": 0.882
+    },
+    {
+      "source_log": "2026-11-11 01-40-34.json",
+      "run": 0,
+      "epochs_recorded": 101,
+      "final10_mean_acc": 0.8805,
+      "best_epoch_acc": 0.8932,
+      "official_mean_acc": 0.88
+    },
+    {
+      "source_log": "2026-11-11 01-49-25.json",
+      "run": 0,
+      "epochs_recorded": 101,
+      "final10_mean_acc": 0.874,
+      "best_epoch_acc": 0.8899,
+      "official_mean_acc": 0.874
+    },
+    {
+      "source_log": "2026-11-11 01-58-20.json",
+      "run": 0,
+      "epochs_recorded": 101,
+      "final10_mean_acc": 0.8839,
+      "best_epoch_acc": 0.8949,
+      "official_mean_acc": 0.884
+    },
+    {
+      "source_log": "2026-11-11 02-07-09.json",
+      "run": 0,
+      "epochs_recorded": 101,
+      "final10_mean_acc": 0.8864,
+      "best_epoch_acc": 0.8949,
+      "official_mean_acc": 0.886
+    },
+    {
+      "source_log": "2026-11-11 02-16-11.json",
+      "run": 0,
+      "epochs_recorded": 101,
+      "final10_mean_acc": 0.8829,
+      "best_epoch_acc": 0.9048,
+      "official_mean_acc": 0.883
+    }
+  ],
+  "final10_mean_acc_avg": 0.8817,
+  "final10_mean_acc_population_sd": 0.005,
+  "final10_mean_acc_min": 0.874,
+  "final10_mean_acc_max": 0.8915,
+  "best_epoch_acc_avg": 0.897,
+  "best_epoch_acc_max": 0.9048,
+  "status": "complete",
+  "target_runs": 10
+}

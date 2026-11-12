@@ -1,0 +1,100 @@
+{
+  "model": "BiGCN (official Net, DRWeiboV3 adapted)",
+  "protocol": "802 split / 10 runs x 100 epochs / last-10 test-ACC mean",
+  "status": "complete",
+  "complete_runs": 10,
+  "missing_runs": [],
+  "final10_mean_acc_avg": 0.8719,
+  "final10_mean_acc_population_sd": 0.003,
+  "final10_mean_acc_sem": 0.0009,
+  "final10_mean_acc_ci95_normal": [
+    0.8701,
+    0.8738
+  ],
+  "final10_mean_macro_f1_avg": 0.8717,
+  "final10_mean_macro_f1_population_sd": 0.0029,
+  "per_run": [
+    {
+      "run": 0,
+      "log_json": "BiGCN/Log/bigcn_run00_2026-11-12 00-56-39.json",
+      "final10_mean_acc": 0.8751,
+      "final10_mean_macro_f1": 0.8748,
+      "best_epoch_acc": 0.8816,
+      "elapsed_seconds": 6353.6
+    },
+    {
+      "run": 1,
+      "log_json": "BiGCN/Log/bigcn_run01_2026-11-12 02-42-53.json",
+      "final10_mean_acc": 0.8708,
+      "final10_mean_macro_f1": 0.8706,
+      "best_epoch_acc": 0.8825,
+      "elapsed_seconds": 4766.5
+    },
+    {
+      "run": 2,
+      "log_json": "BiGCN/Log/bigcn_run02_2026-11-12 04-02-26.json",
+      "final10_mean_acc": 0.8711,
+      "final10_mean_macro_f1": 0.8709,
+      "best_epoch_acc": 0.8791,
+      "elapsed_seconds": 4591.2
+    },
+    {
+      "run": 3,
+      "log_json": "BiGCN/Log/bigcn_run03_2026-11-12 05-19-02.json",
+      "final10_mean_acc": 0.8727,
+      "final10_mean_macro_f1": 0.8724,
+      "best_epoch_acc": 0.8816,
+      "elapsed_seconds": 4647.9
+    },
+    {
+      "run": 4,
+      "log_json": "BiGCN/Log/bigcn_run04_2026-11-12 06-36-36.json",
+      "final10_mean_acc": 0.8684,
+      "final10_mean_macro_f1": 0.8682,
+      "best_epoch_acc": 0.88,
+      "elapsed_seconds": 4599.5
+    },
+    {
+      "run": 5,
+      "log_json": "BiGCN/Log/bigcn_run05_2026-11-12 07-53-20.json",
+      "final10_mean_acc": 0.8671,
+      "final10_mean_macro_f1": 0.8669,
+      "best_epoch_acc": 0.8791,
+      "elapsed_seconds": 4802.7
+    },
+    {
+      "run": 6,
+      "log_json": "BiGCN/Log/bigcn_run06_2026-11-12 09-13-30.json",
+      "final10_mean_acc": 0.8737,
+      "final10_mean_macro_f1": 0.8734,
+      "best_epoch_acc": 0.8783,
+      "elapsed_seconds": 5467.5
+    },
+    {
+      "run": 7,
+      "log_json": "BiGCN/Log/bigcn_run07_2026-11-12 11-55-04.json",
+      "final10_mean_acc": 0.874,
+      "final10_mean_macro_f1": 0.8739,
+      "best_epoch_acc": 0.8825,
+      "elapsed_seconds": 5345.5
+    },
+    {
+      "run": 8,
+      "log_json": "BiGCN/Log/bigcn_run08_2026-11-12 13-24-17.json",
+      "final10_mean_acc": 0.8695,
+      "final10_mean_macro_f1": 0.8694,
+      "best_epoch_acc": 0.8767,
+      "elapsed_seconds": 4756.8
+    },
+    {
+      "run": 9,
+      "log_json": "BiGCN/Log/bigcn_run09_2026-11-12 14-43-45.json",
+      "final10_mean_acc": 0.877,
+      "final10_mean_macro_f1": 0.8768,
+      "best_epoch_acc": 0.8849,
+      "elapsed_seconds": 4733.5
+    }
+  ],
+  "generated_at": "2026-11-12T16:02:40",
+  "note": "BiGCN features are a jieba TRAIN-only top-5000 bag-of-words built from DRWeiboV3, NOT the authors' Weibo vocabulary; 5-fold CV and EarlyStopping are replaced by the unified 802 / fixed-100-epoch protocol. See run_bigcn_drweibo.py."
+}

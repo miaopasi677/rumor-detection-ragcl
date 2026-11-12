@@ -1,0 +1,88 @@
+{
+  "model": "AD-GSCL main(sup)",
+  "protocol": "DRWeiboV3 / 802 / 10x100 / naive w2v (same as RAGCL)",
+  "official_defaults_not_used": "jieba tokenisation and UWeiboV2 unlabelled graphs",
+  "note": "Each run is an independent --runs 1 process; official source unchanged.",
+  "completed": [
+    {
+      "log_json": "2026-11-11 00-55-57.json",
+      "console_log": "adgscl_run_00_20261111_005550.log",
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100",
+      "started": "2026-11-11T00:55:50",
+      "elapsed_seconds": 540.6,
+      "exit_code": 0
+    },
+    {
+      "log_json": "2026-11-11 01-04-56.json",
+      "console_log": "adgscl_run_01_20261111_010451.log",
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100",
+      "started": "2026-11-11T01:04:51",
+      "elapsed_seconds": 537.7,
+      "exit_code": 0
+    },
+    {
+      "log_json": "2026-11-11 01-13-54.json",
+      "console_log": "adgscl_run_02_20261111_011349.log",
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100",
+      "started": "2026-11-11T01:13:49",
+      "elapsed_seconds": 535.2,
+      "exit_code": 0
+    },
+    {
+      "log_json": "2026-11-11 01-22-49.json",
+      "console_log": "adgscl_run_03_20261111_012244.log",
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100",
+      "started": "2026-11-11T01:22:44",
+      "elapsed_seconds": 530.4,
+      "exit_code": 0
+    },
+    {
+      "log_json": "2026-11-11 01-31-40.json",
+      "console_log": "adgscl_run_04_20261111_013134.log",
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100",
+      "started": "2026-11-11T01:31:34",
+      "elapsed_seconds": 534.8,
+      "exit_code": 0
+    },
+    {
+      "log_json": "2026-11-11 01-40-34.json",
+      "console_log": "adgscl_run_05_20261111_014029.log",
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100",
+      "started": "2026-11-11T01:40:29",
+      "elapsed_seconds": 531.2,
+      "exit_code": 0
+    },
+    {
+      "log_json": "2026-11-11 01-49-25.json",
+      "console_log": "adgscl_run_06_20261111_014920.log",
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100",
+      "started": "2026-11-11T01:49:20",
+      "elapsed_seconds": 534.3,
+      "exit_code": 0
+    },
+    {
+      "log_json": "2026-11-11 01-58-20.json",
+      "console_log": "adgscl_run_07_20261111_015815.log",
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100",
+      "started": "2026-11-11T01:58:15",
+      "elapsed_seconds": 529.5,
+      "exit_code": 0
+    },
+    {
+      "log_json": "2026-11-11 02-07-09.json",
+      "console_log": "adgscl_run_08_20261111_020704.log",
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100",
+      "started": "2026-11-11T02:07:04",
+      "elapsed_seconds": 541.8,
+      "exit_code": 0
+    },
+    {
+      "log_json": "2026-11-11 02-16-11.json",
+      "console_log": "adgscl_run_09_20261111_021606.log",
+      "command": "C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\RAGCL\\.venv-gpu\\Scripts\\python.exe -u C:\\file\\data\\workbuddy\\2026-11-09-19-28-24\\rumor-detection\\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100",
+      "started": "2026-11-11T02:16:06",
+      "elapsed_seconds": 534.2,
+      "exit_code": 0
+    }
+  ]
+}

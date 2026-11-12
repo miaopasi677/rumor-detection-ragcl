@@ -1,0 +1,9 @@
+command: C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\RAGCL\.venv-gpu\Scripts\python.exe -u C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\run_adgscl_safe.py --dataset DRWeiboV3 --unsup_dataset UWeibo --tokenize_mode naive --gpu 0 --runs 1 --epochs 100
+total words: 6965
+[safe-dataset] removed 3 processed caches; raw JSON files are overwritten by official sort_dataset().
+Processing...
+Done!
+Processing...
+Done!
+Processing...
+Done!

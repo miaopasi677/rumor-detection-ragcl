@@ -1,0 +1,16 @@
+C:\file\data\workbuddy\2026-11-09-19-28-24\rumor-detection\RAGCL\.venv-gpu\lib\site-packages\torch_geometric\deprecation.py:12: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+device=cuda:0 train=4829 test=1208 batch_offset_check=49 torch_seed=42264646138700
+run 7 epoch 000 test_acc=0.4917 macro_f1=0.4917 elapsed=21s
+run 7 epoch 010 test_acc=0.8675 macro_f1=0.8674 elapsed=587s
+run 7 epoch 020 test_acc=0.856 macro_f1=0.8559 elapsed=1180s
+run 7 epoch 030 test_acc=0.8626 macro_f1=0.8621 elapsed=1882s
+run 7 epoch 040 test_acc=0.8626 macro_f1=0.8622 elapsed=2350s
+run 7 epoch 050 test_acc=0.8684 macro_f1=0.8682 elapsed=2877s
+run 7 epoch 060 test_acc=0.8576 macro_f1=0.8572 elapsed=3411s
+run 7 epoch 070 test_acc=0.8609 macro_f1=0.8609 elapsed=3898s
+run 7 epoch 080 test_acc=0.8675 macro_f1=0.8675 elapsed=4397s
+run 7 epoch 090 test_acc=0.8767 macro_f1=0.8761 elapsed=4878s
+run 7 epoch 100 test_acc=0.8593 macro_f1=0.8593 elapsed=5346s
+RUN 7 DONE final10=0.874 elapsed=5345.5s log=bigcn_run07_2026-11-12 11-55-04.json
+FINAL n=1 mean=0.8740 population_sd=0.0000

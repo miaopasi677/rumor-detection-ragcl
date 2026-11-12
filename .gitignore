@@ -1,10 +1,16 @@
 # 官方源码（版权归原作者，请按 README 自行 clone，不纳入本仓库）
 /RAGCL/Main/
 /RAGCL/Log/record_*.py
+/AD-GSCL/Log/record_*.py
 /RAGCL/README.md
 /RAGCL/centrality.py
-/AD-GSCL/
-/BiGCN/
+# 官方源码 / 数据目录不纳入；但保留两模型真实的运行日志与结果汇总
+/AD-GSCL/*
+!/AD-GSCL/Log/
+!/AD-GSCL/logs/
+/BiGCN/*
+!/BiGCN/Log/
+!/BiGCN/logs/
 /UWeibo/
 /DRWeibo/
 

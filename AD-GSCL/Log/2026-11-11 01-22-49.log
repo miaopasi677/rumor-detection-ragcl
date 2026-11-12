@@ -1,0 +1,406 @@
+run:0
+Epoch: 000, LR: 0.001000, Loss: 0.0000000, Val ERROR: 4.0547366, Test ERROR: 5.4389507
+  Train ACC: 0.0000, Validation ACC: 0.0000, Test ACC: 0.5240
+  Test PREC: [0.524, 0.0], Test REC: [1.0, 0.0], Test F1: [0.6877, 0.0]
+  Test Micro Metric(PREC, REC, F1):[0.524, 0.524, 0.524], Test Macro Metric(PREC, REC, F1):[0.262, 0.5, 0.3438]
+Epoch: 001, LR: 0.001000, Loss: 0.4417150, Val ERROR: 1.9166220, Test ERROR: 0.4685270
+  Train ACC: 0.8035, Validation ACC: 0.0000, Test ACC: 0.7939
+  Test PREC: [0.7799, 0.8123], Test REC: [0.8452, 0.7374], Test F1: [0.8112, 0.773]
+  Test Micro Metric(PREC, REC, F1):[0.7939, 0.7939, 0.7939], Test Macro Metric(PREC, REC, F1):[0.7961, 0.7913, 0.7921]
+Epoch: 002, LR: 0.001000, Loss: 0.3246820, Val ERROR: 2.1032553, Test ERROR: 0.3580654
+  Train ACC: 0.8762, Validation ACC: 0.0000, Test ACC: 0.8568
+  Test PREC: [0.8267, 0.8988], Test REC: [0.9194, 0.7878], Test F1: [0.8706, 0.8397]
+  Test Micro Metric(PREC, REC, F1):[0.8568, 0.8568, 0.8568], Test Macro Metric(PREC, REC, F1):[0.8628, 0.8536, 0.8551]
+Epoch: 003, LR: 0.001000, Loss: 0.3279965, Val ERROR: 1.6580372, Test ERROR: 0.3761829
+  Train ACC: 0.8619, Validation ACC: 0.0000, Test ACC: 0.8311
+  Test PREC: [0.8499, 0.8118], Test REC: [0.8231, 0.84], Test F1: [0.8363, 0.8256]
+  Test Micro Metric(PREC, REC, F1):[0.8311, 0.8311, 0.8311], Test Macro Metric(PREC, REC, F1):[0.8308, 0.8315, 0.831]
+Epoch: 004, LR: 0.001000, Loss: 0.3908402, Val ERROR: 0.3863955, Test ERROR: 0.4432410
+  Train ACC: 0.8273, Validation ACC: 1.0000, Test ACC: 0.7997
+  Test PREC: [0.8949, 0.7335], Test REC: [0.6998, 0.9096], Test F1: [0.7855, 0.8121]
+  Test Micro Metric(PREC, REC, F1):[0.7997, 0.7997, 0.7997], Test Macro Metric(PREC, REC, F1):[0.8142, 0.8047, 0.7988]
+Epoch: 005, LR: 0.001000, Loss: 0.2918890, Val ERROR: 3.2870936, Test ERROR: 0.3560505
+  Train ACC: 0.8815, Validation ACC: 0.0000, Test ACC: 0.8411
+  Test PREC: [0.7875, 0.9342], Test REC: [0.9542, 0.7165], Test F1: [0.8629, 0.811]
+  Test Micro Metric(PREC, REC, F1):[0.8411, 0.8411, 0.8411], Test Macro Metric(PREC, REC, F1):[0.8609, 0.8354, 0.8369]
+Epoch: 006, LR: 0.001000, Loss: 0.3195828, Val ERROR: 2.9481869, Test ERROR: 0.3951448
+  Train ACC: 0.8704, Validation ACC: 0.0000, Test ACC: 0.8469
+  Test PREC: [0.8958, 0.8037], Test REC: [0.8009, 0.8974], Test F1: [0.8457, 0.848]
+  Test Micro Metric(PREC, REC, F1):[0.8469, 0.8469, 0.8469], Test Macro Metric(PREC, REC, F1):[0.8497, 0.8492, 0.8468]
+Epoch: 007, LR: 0.001000, Loss: 0.2301121, Val ERROR: 3.2371221, Test ERROR: 0.3238653
+  Train ACC: 0.9126, Validation ACC: 0.0000, Test ACC: 0.8700
+  Test PREC: [0.8352, 0.9197], Test REC: [0.9368, 0.7965], Test F1: [0.8831, 0.8537]
+  Test Micro Metric(PREC, REC, F1):[0.87, 0.87, 0.87], Test Macro Metric(PREC, REC, F1):[0.8774, 0.8667, 0.8684]
+Epoch: 008, LR: 0.001000, Loss: 0.2964155, Val ERROR: 3.4194214, Test ERROR: 0.3921276
+  Train ACC: 0.8718, Validation ACC: 0.0000, Test ACC: 0.8353
+  Test PREC: [0.8546, 0.8154], Test REC: [0.8262, 0.8452], Test F1: [0.8402, 0.8301]
+  Test Micro Metric(PREC, REC, F1):[0.8353, 0.8353, 0.8353], Test Macro Metric(PREC, REC, F1):[0.835, 0.8357, 0.8351]
+Epoch: 009, LR: 0.001000, Loss: 0.2146270, Val ERROR: 1.0933377, Test ERROR: 0.3406474
+  Train ACC: 0.9192, Validation ACC: 0.0000, Test ACC: 0.8593
+  Test PREC: [0.8612, 0.8571], Test REC: [0.872, 0.8452], Test F1: [0.8666, 0.8511]
+  Test Micro Metric(PREC, REC, F1):[0.8593, 0.8593, 0.8593], Test Macro Metric(PREC, REC, F1):[0.8591, 0.8586, 0.8589]
+Epoch: 010, LR: 0.001000, Loss: 0.2152769, Val ERROR: 3.0591185, Test ERROR: 0.3403171
+  Train ACC: 0.9199, Validation ACC: 0.0000, Test ACC: 0.8651
+  Test PREC: [0.8593, 0.8718], Test REC: [0.8878, 0.84], Test F1: [0.8733, 0.8556]
+  Test Micro Metric(PREC, REC, F1):[0.8651, 0.8651, 0.8651], Test Macro Metric(PREC, REC, F1):[0.8656, 0.8639, 0.8645]
+Epoch: 011, LR: 0.001000, Loss: 0.2271251, Val ERROR: 1.4816692, Test ERROR: 0.3357164
+  Train ACC: 0.9134, Validation ACC: 0.0000, Test ACC: 0.8675
+  Test PREC: [0.8355, 0.9125], Test REC: [0.9305, 0.7983], Test F1: [0.8804, 0.8516]
+  Test Micro Metric(PREC, REC, F1):[0.8675, 0.8675, 0.8675], Test Macro Metric(PREC, REC, F1):[0.874, 0.8644, 0.866]
+Epoch: 012, LR: 0.001000, Loss: 0.1788183, Val ERROR: 4.8505492, Test ERROR: 0.3180844
+  Train ACC: 0.9362, Validation ACC: 0.0000, Test ACC: 0.8775
+  Test PREC: [0.853, 0.9098], Test REC: [0.9258, 0.8243], Test F1: [0.8879, 0.865]
+  Test Micro Metric(PREC, REC, F1):[0.8775, 0.8775, 0.8775], Test Macro Metric(PREC, REC, F1):[0.8814, 0.875, 0.8764]
+Epoch: 013, LR: 0.001000, Loss: 0.1787269, Val ERROR: 3.5148847, Test ERROR: 0.3292194
+  Train ACC: 0.9290, Validation ACC: 0.0000, Test ACC: 0.8667
+  Test PREC: [0.8933, 0.8405], Test REC: [0.8468, 0.8887], Test F1: [0.8694, 0.8639]
+  Test Micro Metric(PREC, REC, F1):[0.8667, 0.8667, 0.8667], Test Macro Metric(PREC, REC, F1):[0.8669, 0.8677, 0.8667]
+Epoch: 014, LR: 0.001000, Loss: 0.1630259, Val ERROR: 5.2233424, Test ERROR: 0.3298555
+  Train ACC: 0.9418, Validation ACC: 0.0000, Test ACC: 0.8634
+  Test PREC: [0.8622, 0.8648], Test REC: [0.8799, 0.8452], Test F1: [0.871, 0.8549]
+  Test Micro Metric(PREC, REC, F1):[0.8634, 0.8634, 0.8634], Test Macro Metric(PREC, REC, F1):[0.8635, 0.8626, 0.8629]
+Epoch: 015, LR: 0.001000, Loss: 0.1707068, Val ERROR: 3.9720697, Test ERROR: 0.3152744
+  Train ACC: 0.9466, Validation ACC: 0.0000, Test ACC: 0.8675
+  Test PREC: [0.8525, 0.8864], Test REC: [0.9036, 0.8278], Test F1: [0.8773, 0.8561]
+  Test Micro Metric(PREC, REC, F1):[0.8675, 0.8675, 0.8675], Test Macro Metric(PREC, REC, F1):[0.8694, 0.8657, 0.8667]
+Epoch: 016, LR: 0.001000, Loss: 0.1661729, Val ERROR: 4.3546591, Test ERROR: 0.3188389
+  Train ACC: 0.9433, Validation ACC: 0.0000, Test ACC: 0.8659
+  Test PREC: [0.8369, 0.9057], Test REC: [0.9242, 0.8017], Test F1: [0.8784, 0.8506]
+  Test Micro Metric(PREC, REC, F1):[0.8659, 0.8659, 0.8659], Test Macro Metric(PREC, REC, F1):[0.8713, 0.863, 0.8645]
+Epoch: 017, LR: 0.001000, Loss: 0.1566871, Val ERROR: 4.5293202, Test ERROR: 0.3421150
+  Train ACC: 0.9433, Validation ACC: 0.0000, Test ACC: 0.8568
+  Test PREC: [0.8495, 0.8655], Test REC: [0.8831, 0.8278], Test F1: [0.866, 0.8462]
+  Test Micro Metric(PREC, REC, F1):[0.8568, 0.8568, 0.8568], Test Macro Metric(PREC, REC, F1):[0.8575, 0.8555, 0.8561]
+Epoch: 018, LR: 0.001000, Loss: 0.1480240, Val ERROR: 4.9127245, Test ERROR: 0.3173352
+  Train ACC: 0.9439, Validation ACC: 0.0000, Test ACC: 0.8783
+  Test PREC: [0.8462, 0.9229], Test REC: [0.9384, 0.8122], Test F1: [0.8899, 0.864]
+  Test Micro Metric(PREC, REC, F1):[0.8783, 0.8783, 0.8783], Test Macro Metric(PREC, REC, F1):[0.8845, 0.8753, 0.877]
+Epoch: 019, LR: 0.001000, Loss: 0.1590276, Val ERROR: 3.7556868, Test ERROR: 0.3311235
+  Train ACC: 0.9391, Validation ACC: 0.0000, Test ACC: 0.8725
+  Test PREC: [0.8559, 0.8935], Test REC: [0.91, 0.8313], Test F1: [0.8821, 0.8613]
+  Test Micro Metric(PREC, REC, F1):[0.8725, 0.8725, 0.8725], Test Macro Metric(PREC, REC, F1):[0.8747, 0.8706, 0.8717]
+Epoch: 020, LR: 0.001000, Loss: 0.1150643, Val ERROR: 4.5731034, Test ERROR: 0.3110678
+  Train ACC: 0.9600, Validation ACC: 0.0000, Test ACC: 0.8916
+  Test PREC: [0.8746, 0.9126], Test REC: [0.9258, 0.8539], Test F1: [0.8995, 0.8823]
+  Test Micro Metric(PREC, REC, F1):[0.8916, 0.8916, 0.8916], Test Macro Metric(PREC, REC, F1):[0.8936, 0.8898, 0.8909]
+Epoch: 021, LR: 0.001000, Loss: 0.2086643, Val ERROR: 1.6960701, Test ERROR: 0.3326581
+  Train ACC: 0.9226, Validation ACC: 0.0000, Test ACC: 0.8642
+  Test PREC: [0.8658, 0.8624], Test REC: [0.8768, 0.8504], Test F1: [0.8713, 0.8564]
+  Test Micro Metric(PREC, REC, F1):[0.8642, 0.8642, 0.8642], Test Macro Metric(PREC, REC, F1):[0.8641, 0.8636, 0.8638]
+Epoch: 022, LR: 0.001000, Loss: 0.1564380, Val ERROR: 3.1283464, Test ERROR: 0.3782322
+  Train ACC: 0.9437, Validation ACC: 0.0000, Test ACC: 0.8543
+  Test PREC: [0.903, 0.8112], Test REC: [0.8088, 0.9043], Test F1: [0.8533, 0.8553]
+  Test Micro Metric(PREC, REC, F1):[0.8543, 0.8543, 0.8543], Test Macro Metric(PREC, REC, F1):[0.8571, 0.8566, 0.8543]
+Epoch: 023, LR: 0.001000, Loss: 0.3178073, Val ERROR: 4.0114465, Test ERROR: 0.4583724
+  Train ACC: 0.8815, Validation ACC: 0.0000, Test ACC: 0.8320
+  Test PREC: [0.7681, 0.9581], Test REC: [0.9731, 0.6765], Test F1: [0.8585, 0.7931]
+  Test Micro Metric(PREC, REC, F1):[0.832, 0.832, 0.832], Test Macro Metric(PREC, REC, F1):[0.8631, 0.8248, 0.8258]
+Epoch: 024, LR: 0.001000, Loss: 0.1453063, Val ERROR: 3.8639736, Test ERROR: 0.3184726
+  Train ACC: 0.9455, Validation ACC: 0.0000, Test ACC: 0.8775
+  Test PREC: [0.8479, 0.9178], Test REC: [0.9336, 0.8157], Test F1: [0.8887, 0.8637]
+  Test Micro Metric(PREC, REC, F1):[0.8775, 0.8775, 0.8775], Test Macro Metric(PREC, REC, F1):[0.8829, 0.8747, 0.8762]
+Epoch: 025, LR: 0.001000, Loss: 0.1768252, Val ERROR: 4.6684175, Test ERROR: 0.3558293
+  Train ACC: 0.9381, Validation ACC: 0.0000, Test ACC: 0.8469
+  Test PREC: [0.8522, 0.8409], Test REC: [0.8562, 0.8365], Test F1: [0.8542, 0.8387]
+  Test Micro Metric(PREC, REC, F1):[0.8469, 0.8469, 0.8469], Test Macro Metric(PREC, REC, F1):[0.8466, 0.8464, 0.8465]
+Epoch: 026, LR: 0.001000, Loss: 0.1511800, Val ERROR: 5.8744993, Test ERROR: 0.3665935
+  Train ACC: 0.9445, Validation ACC: 0.0000, Test ACC: 0.8618
+  Test PREC: [0.8377, 0.8938], Test REC: [0.9131, 0.8052], Test F1: [0.8738, 0.8472]
+  Test Micro Metric(PREC, REC, F1):[0.8618, 0.8618, 0.8618], Test Macro Metric(PREC, REC, F1):[0.8658, 0.8592, 0.8605]
+Epoch: 027, LR: 0.001000, Loss: 0.2798495, Val ERROR: 2.4852710, Test ERROR: 0.3686405
+  Train ACC: 0.8917, Validation ACC: 0.0000, Test ACC: 0.8452
+  Test PREC: [0.8204, 0.8789], Test REC: [0.9021, 0.7826], Test F1: [0.8593, 0.828]
+  Test Micro Metric(PREC, REC, F1):[0.8452, 0.8452, 0.8452], Test Macro Metric(PREC, REC, F1):[0.8497, 0.8423, 0.8436]
+Epoch: 028, LR: 0.001000, Loss: 0.1426246, Val ERROR: 3.5304506, Test ERROR: 0.3120679
+  Train ACC: 0.9557, Validation ACC: 0.0000, Test ACC: 0.8733
+  Test PREC: [0.8614, 0.8879], Test REC: [0.9036, 0.84], Test F1: [0.882, 0.8633]
+  Test Micro Metric(PREC, REC, F1):[0.8733, 0.8733, 0.8733], Test Macro Metric(PREC, REC, F1):[0.8747, 0.8718, 0.8727]
+Epoch: 029, LR: 0.001000, Loss: 0.1507101, Val ERROR: 5.0459089, Test ERROR: 0.3749687
+  Train ACC: 0.9445, Validation ACC: 0.0000, Test ACC: 0.8584
+  Test PREC: [0.8244, 0.9073], Test REC: [0.9273, 0.7826], Test F1: [0.8729, 0.8403]
+  Test Micro Metric(PREC, REC, F1):[0.8584, 0.8584, 0.8584], Test Macro Metric(PREC, REC, F1):[0.8658, 0.855, 0.8566]
+Epoch: 030, LR: 0.001000, Loss: 0.1940421, Val ERROR: 4.8329005, Test ERROR: 0.3502792
+  Train ACC: 0.9236, Validation ACC: 0.0000, Test ACC: 0.8601
+  Test PREC: [0.8324, 0.898], Test REC: [0.9179, 0.7965], Test F1: [0.873, 0.8442]
+  Test Micro Metric(PREC, REC, F1):[0.8601, 0.8601, 0.8601], Test Macro Metric(PREC, REC, F1):[0.8652, 0.8572, 0.8586]
+Epoch: 031, LR: 0.001000, Loss: 0.1382100, Val ERROR: 3.5795999, Test ERROR: 0.3216921
+  Train ACC: 0.9557, Validation ACC: 0.0000, Test ACC: 0.8692
+  Test PREC: [0.8427, 0.9049], Test REC: [0.9226, 0.8104], Test F1: [0.8808, 0.855]
+  Test Micro Metric(PREC, REC, F1):[0.8692, 0.8692, 0.8692], Test Macro Metric(PREC, REC, F1):[0.8738, 0.8665, 0.8679]
+Epoch: 032, LR: 0.001000, Loss: 0.1108058, Val ERROR: 4.1699910, Test ERROR: 0.3380362
+  Train ACC: 0.9638, Validation ACC: 0.0000, Test ACC: 0.8825
+  Test PREC: [0.8748, 0.8915], Test REC: [0.9052, 0.8574], Test F1: [0.8898, 0.8741]
+  Test Micro Metric(PREC, REC, F1):[0.8825, 0.8825, 0.8825], Test Macro Metric(PREC, REC, F1):[0.8832, 0.8813, 0.8819]
+Epoch: 033, LR: 0.001000, Loss: 0.0778827, Val ERROR: 4.2457108, Test ERROR: 0.3407444
+  Train ACC: 0.9772, Validation ACC: 0.0000, Test ACC: 0.8825
+  Test PREC: [0.8842, 0.8805], Test REC: [0.8926, 0.8713], Test F1: [0.8884, 0.8759]
+  Test Micro Metric(PREC, REC, F1):[0.8825, 0.8825, 0.8825], Test Macro Metric(PREC, REC, F1):[0.8823, 0.8819, 0.8821]
+Epoch: 034, LR: 0.001000, Loss: 0.0884099, Val ERROR: 5.0982122, Test ERROR: 0.3729911
+  Train ACC: 0.9677, Validation ACC: 0.0000, Test ACC: 0.8733
+  Test PREC: [0.8614, 0.8879], Test REC: [0.9036, 0.84], Test F1: [0.882, 0.8633]
+  Test Micro Metric(PREC, REC, F1):[0.8733, 0.8733, 0.8733], Test Macro Metric(PREC, REC, F1):[0.8747, 0.8718, 0.8727]
+Epoch: 035, LR: 0.001000, Loss: 0.0825583, Val ERROR: 5.2989755, Test ERROR: 0.3505663
+  Train ACC: 0.9731, Validation ACC: 0.0000, Test ACC: 0.8684
+  Test PREC: [0.8646, 0.8728], Test REC: [0.8878, 0.847], Test F1: [0.8761, 0.8597]
+  Test Micro Metric(PREC, REC, F1):[0.8684, 0.8684, 0.8684], Test Macro Metric(PREC, REC, F1):[0.8687, 0.8674, 0.8679]
+Epoch: 036, LR: 0.001000, Loss: 0.1074682, Val ERROR: 6.5342002, Test ERROR: 0.3959022
+  Train ACC: 0.9640, Validation ACC: 0.0000, Test ACC: 0.8609
+  Test PREC: [0.8394, 0.8891], Test REC: [0.9084, 0.8087], Test F1: [0.8725, 0.847]
+  Test Micro Metric(PREC, REC, F1):[0.8609, 0.8609, 0.8609], Test Macro Metric(PREC, REC, F1):[0.8643, 0.8585, 0.8598]
+Epoch: 037, LR: 0.001000, Loss: 0.1072773, Val ERROR: 5.4594831, Test ERROR: 0.3308889
+  Train ACC: 0.9600, Validation ACC: 0.0000, Test ACC: 0.8742
+  Test PREC: [0.8364, 0.929], Test REC: [0.9447, 0.7965], Test F1: [0.8872, 0.8577]
+  Test Micro Metric(PREC, REC, F1):[0.8742, 0.8742, 0.8742], Test Macro Metric(PREC, REC, F1):[0.8827, 0.8706, 0.8725]
+Epoch: 038, LR: 0.001000, Loss: 0.1285581, Val ERROR: 4.2103987, Test ERROR: 0.3938911
+  Train ACC: 0.9509, Validation ACC: 0.0000, Test ACC: 0.8626
+  Test PREC: [0.823, 0.9216], Test REC: [0.94, 0.7774], Test F1: [0.8776, 0.8434]
+  Test Micro Metric(PREC, REC, F1):[0.8626, 0.8626, 0.8626], Test Macro Metric(PREC, REC, F1):[0.8723, 0.8587, 0.8605]
+Epoch: 039, LR: 0.001000, Loss: 0.0973053, Val ERROR: 5.3092608, Test ERROR: 0.3338866
+  Train ACC: 0.9679, Validation ACC: 0.0000, Test ACC: 0.8667
+  Test PREC: [0.8501, 0.8876], Test REC: [0.9052, 0.8243], Test F1: [0.8768, 0.8548]
+  Test Micro Metric(PREC, REC, F1):[0.8667, 0.8667, 0.8667], Test Macro Metric(PREC, REC, F1):[0.8689, 0.8648, 0.8658]
+Epoch: 040, LR: 0.001000, Loss: 0.0614510, Val ERROR: 5.7769299, Test ERROR: 0.3434214
+  Train ACC: 0.9826, Validation ACC: 0.0000, Test ACC: 0.8841
+  Test PREC: [0.8786, 0.8905], Test REC: [0.9036, 0.8626], Test F1: [0.891, 0.8763]
+  Test Micro Metric(PREC, REC, F1):[0.8841, 0.8841, 0.8841], Test Macro Metric(PREC, REC, F1):[0.8846, 0.8831, 0.8836]
+Epoch: 041, LR: 0.001000, Loss: 0.0974676, Val ERROR: 5.0198851, Test ERROR: 0.4012981
+  Train ACC: 0.9677, Validation ACC: 0.0000, Test ACC: 0.8618
+  Test PREC: [0.887, 0.8366], Test REC: [0.8436, 0.8817], Test F1: [0.8648, 0.8586]
+  Test Micro Metric(PREC, REC, F1):[0.8618, 0.8618, 0.8618], Test Macro Metric(PREC, REC, F1):[0.8618, 0.8627, 0.8617]
+Epoch: 042, LR: 0.001000, Loss: 0.0505019, Val ERROR: 5.3514848, Test ERROR: 0.3674760
+  Train ACC: 0.9851, Validation ACC: 0.0000, Test ACC: 0.8767
+  Test PREC: [0.8667, 0.8887], Test REC: [0.9036, 0.847], Test F1: [0.8848, 0.8673]
+  Test Micro Metric(PREC, REC, F1):[0.8767, 0.8767, 0.8767], Test Macro Metric(PREC, REC, F1):[0.8777, 0.8753, 0.876]
+Epoch: 043, LR: 0.001000, Loss: 0.0619390, Val ERROR: 4.1361051, Test ERROR: 0.3609966
+  Train ACC: 0.9814, Validation ACC: 0.0000, Test ACC: 0.8808
+  Test PREC: [0.8744, 0.8883], Test REC: [0.9021, 0.8574], Test F1: [0.888, 0.8726]
+  Test Micro Metric(PREC, REC, F1):[0.8808, 0.8808, 0.8808], Test Macro Metric(PREC, REC, F1):[0.8814, 0.8797, 0.8803]
+Epoch: 044, LR: 0.001000, Loss: 0.0979574, Val ERROR: 3.6286864, Test ERROR: 0.3737657
+  Train ACC: 0.9596, Validation ACC: 0.0000, Test ACC: 0.8651
+  Test PREC: [0.821, 0.9328], Test REC: [0.9494, 0.7722], Test F1: [0.8806, 0.8449]
+  Test Micro Metric(PREC, REC, F1):[0.8651, 0.8651, 0.8651], Test Macro Metric(PREC, REC, F1):[0.8769, 0.8608, 0.8627]
+Epoch: 045, LR: 0.001000, Loss: 0.0725712, Val ERROR: 3.1109765, Test ERROR: 0.3453993
+  Train ACC: 0.9797, Validation ACC: 0.0000, Test ACC: 0.8692
+  Test PREC: [0.8788, 0.8589], Test REC: [0.8705, 0.8678], Test F1: [0.8746, 0.8633]
+  Test Micro Metric(PREC, REC, F1):[0.8692, 0.8692, 0.8692], Test Macro Metric(PREC, REC, F1):[0.8688, 0.8691, 0.869]
+Epoch: 046, LR: 0.001000, Loss: 0.0744284, Val ERROR: 3.2416823, Test ERROR: 0.3659909
+  Train ACC: 0.9756, Validation ACC: 0.0000, Test ACC: 0.8750
+  Test PREC: [0.8663, 0.8855], Test REC: [0.9005, 0.847], Test F1: [0.883, 0.8658]
+  Test Micro Metric(PREC, REC, F1):[0.875, 0.875, 0.875], Test Macro Metric(PREC, REC, F1):[0.8759, 0.8737, 0.8744]
+Epoch: 047, LR: 0.001000, Loss: 0.1558177, Val ERROR: 2.7056556, Test ERROR: 0.3708460
+  Train ACC: 0.9439, Validation ACC: 0.0000, Test ACC: 0.8510
+  Test PREC: [0.8731, 0.8286], Test REC: [0.8373, 0.8661], Test F1: [0.8548, 0.8469]
+  Test Micro Metric(PREC, REC, F1):[0.851, 0.851, 0.851], Test Macro Metric(PREC, REC, F1):[0.8509, 0.8517, 0.8509]
+Epoch: 048, LR: 0.001000, Loss: 0.0652667, Val ERROR: 5.9596124, Test ERROR: 0.3871167
+  Train ACC: 0.9772, Validation ACC: 0.0000, Test ACC: 0.8733
+  Test PREC: [0.8361, 0.9271], Test REC: [0.9431, 0.7965], Test F1: [0.8864, 0.8569]
+  Test Micro Metric(PREC, REC, F1):[0.8733, 0.8733, 0.8733], Test Macro Metric(PREC, REC, F1):[0.8816, 0.8698, 0.8716]
+Epoch: 049, LR: 0.001000, Loss: 0.0473906, Val ERROR: 3.0271258, Test ERROR: 0.3465191
+  Train ACC: 0.9882, Validation ACC: 0.0000, Test ACC: 0.8849
+  Test PREC: [0.8896, 0.8798], Test REC: [0.891, 0.8783], Test F1: [0.8903, 0.879]
+  Test Micro Metric(PREC, REC, F1):[0.8849, 0.8849, 0.8849], Test Macro Metric(PREC, REC, F1):[0.8847, 0.8846, 0.8847]
+Epoch: 050, LR: 0.001000, Loss: 0.0310400, Val ERROR: 4.8873892, Test ERROR: 0.3728516
+  Train ACC: 0.9911, Validation ACC: 0.0000, Test ACC: 0.8833
+  Test PREC: [0.8905, 0.8754], Test REC: [0.8863, 0.88], Test F1: [0.8884, 0.8777]
+  Test Micro Metric(PREC, REC, F1):[0.8833, 0.8833, 0.8833], Test Macro Metric(PREC, REC, F1):[0.883, 0.8831, 0.883]
+Epoch: 051, LR: 0.001000, Loss: 0.0756187, Val ERROR: 6.3333240, Test ERROR: 0.4698267
+  Train ACC: 0.9725, Validation ACC: 0.0000, Test ACC: 0.8593
+  Test PREC: [0.8193, 0.9193], Test REC: [0.9384, 0.7722], Test F1: [0.8748, 0.8393]
+  Test Micro Metric(PREC, REC, F1):[0.8593, 0.8593, 0.8593], Test Macro Metric(PREC, REC, F1):[0.8693, 0.8553, 0.8571]
+Epoch: 052, LR: 0.001000, Loss: 0.0664568, Val ERROR: 5.9062991, Test ERROR: 0.3845343
+  Train ACC: 0.9822, Validation ACC: 0.0000, Test ACC: 0.8700
+  Test PREC: [0.8826, 0.8567], Test REC: [0.8673, 0.873], Test F1: [0.8749, 0.8648]
+  Test Micro Metric(PREC, REC, F1):[0.87, 0.87, 0.87], Test Macro Metric(PREC, REC, F1):[0.8696, 0.8702, 0.8698]
+Epoch: 053, LR: 0.001000, Loss: 0.0686577, Val ERROR: 3.6683967, Test ERROR: 0.3855949
+  Train ACC: 0.9807, Validation ACC: 0.0000, Test ACC: 0.8601
+  Test PREC: [0.8867, 0.8339], Test REC: [0.8404, 0.8817], Test F1: [0.8629, 0.8571]
+  Test Micro Metric(PREC, REC, F1):[0.8601, 0.8601, 0.8601], Test Macro Metric(PREC, REC, F1):[0.8603, 0.8611, 0.86]
+Epoch: 054, LR: 0.001000, Loss: 0.0460830, Val ERROR: 4.2574434, Test ERROR: 0.3758230
+  Train ACC: 0.9874, Validation ACC: 0.0000, Test ACC: 0.8841
+  Test PREC: [0.8547, 0.924], Test REC: [0.9384, 0.8243], Test F1: [0.8946, 0.8713]
+  Test Micro Metric(PREC, REC, F1):[0.8841, 0.8841, 0.8841], Test Macro Metric(PREC, REC, F1):[0.8893, 0.8814, 0.883]
+Epoch: 055, LR: 0.001000, Loss: 0.0328360, Val ERROR: 4.4843879, Test ERROR: 0.4028016
+  Train ACC: 0.9911, Validation ACC: 0.0000, Test ACC: 0.8717
+  Test PREC: [0.8578, 0.8889], Test REC: [0.9052, 0.8348], Test F1: [0.8809, 0.861]
+  Test Micro Metric(PREC, REC, F1):[0.8717, 0.8717, 0.8717], Test Macro Metric(PREC, REC, F1):[0.8733, 0.87, 0.8709]
+Epoch: 056, LR: 0.001000, Loss: 0.0333673, Val ERROR: 6.2357388, Test ERROR: 0.4213277
+  Train ACC: 0.9899, Validation ACC: 0.0000, Test ACC: 0.8733
+  Test PREC: [0.8488, 0.9058], Test REC: [0.9226, 0.8191], Test F1: [0.8842, 0.8603]
+  Test Micro Metric(PREC, REC, F1):[0.8733, 0.8733, 0.8733], Test Macro Metric(PREC, REC, F1):[0.8773, 0.8709, 0.8722]
+Epoch: 057, LR: 0.001000, Loss: 0.0406899, Val ERROR: 5.4079437, Test ERROR: 0.3734222
+  Train ACC: 0.9896, Validation ACC: 0.0000, Test ACC: 0.8750
+  Test PREC: [0.8576, 0.897], Test REC: [0.9131, 0.833], Test F1: [0.8845, 0.8638]
+  Test Micro Metric(PREC, REC, F1):[0.875, 0.875, 0.875], Test Macro Metric(PREC, REC, F1):[0.8773, 0.8731, 0.8742]
+Epoch: 058, LR: 0.001000, Loss: 0.0690442, Val ERROR: 3.5991051, Test ERROR: 0.3186628
+  Train ACC: 0.9818, Validation ACC: 0.0000, Test ACC: 0.8866
+  Test PREC: [0.8937, 0.8789], Test REC: [0.8894, 0.8835], Test F1: [0.8915, 0.8812]
+  Test Micro Metric(PREC, REC, F1):[0.8866, 0.8866, 0.8866], Test Macro Metric(PREC, REC, F1):[0.8863, 0.8864, 0.8864]
+Epoch: 059, LR: 0.001000, Loss: 0.0591574, Val ERROR: 6.6849141, Test ERROR: 0.4092097
+  Train ACC: 0.9803, Validation ACC: 0.0000, Test ACC: 0.8692
+  Test PREC: [0.8369, 0.9145], Test REC: [0.9321, 0.8], Test F1: [0.8819, 0.8534]
+  Test Micro Metric(PREC, REC, F1):[0.8692, 0.8692, 0.8692], Test Macro Metric(PREC, REC, F1):[0.8757, 0.866, 0.8677]
+Epoch: 060, LR: 0.001000, Loss: 0.0473531, Val ERROR: 6.1383767, Test ERROR: 0.3819527
+  Train ACC: 0.9855, Validation ACC: 0.0000, Test ACC: 0.8791
+  Test PREC: [0.8464, 0.9248], Test REC: [0.94, 0.8122], Test F1: [0.8907, 0.8648]
+  Test Micro Metric(PREC, REC, F1):[0.8791, 0.8791, 0.8791], Test Macro Metric(PREC, REC, F1):[0.8856, 0.8761, 0.8778]
+Epoch: 061, LR: 0.001000, Loss: 0.0414654, Val ERROR: 6.8822670, Test ERROR: 0.4398985
+  Train ACC: 0.9872, Validation ACC: 0.0000, Test ACC: 0.8659
+  Test PREC: [0.8359, 0.9073], Test REC: [0.9258, 0.8], Test F1: [0.8786, 0.8503]
+  Test Micro Metric(PREC, REC, F1):[0.8659, 0.8659, 0.8659], Test Macro Metric(PREC, REC, F1):[0.8716, 0.8629, 0.8644]
+Epoch: 062, LR: 0.001000, Loss: 0.0305502, Val ERROR: 4.9156885, Test ERROR: 0.3830465
+  Train ACC: 0.9946, Validation ACC: 0.0000, Test ACC: 0.8841
+  Test PREC: [0.8846, 0.8836], Test REC: [0.8957, 0.8713], Test F1: [0.8901, 0.8774]
+  Test Micro Metric(PREC, REC, F1):[0.8841, 0.8841, 0.8841], Test Macro Metric(PREC, REC, F1):[0.8841, 0.8835, 0.8838]
+Epoch: 063, LR: 0.001000, Loss: 0.0568711, Val ERROR: 4.6154194, Test ERROR: 0.3853663
+  Train ACC: 0.9820, Validation ACC: 0.0000, Test ACC: 0.8742
+  Test PREC: [0.8787, 0.8691], Test REC: [0.8815, 0.8661], Test F1: [0.8801, 0.8676]
+  Test Micro Metric(PREC, REC, F1):[0.8742, 0.8742, 0.8742], Test Macro Metric(PREC, REC, F1):[0.8739, 0.8738, 0.8739]
+Epoch: 064, LR: 0.001000, Loss: 0.0417266, Val ERROR: 5.7886362, Test ERROR: 0.3554006
+  Train ACC: 0.9919, Validation ACC: 0.0000, Test ACC: 0.8742
+  Test PREC: [0.8776, 0.8704], Test REC: [0.8831, 0.8643], Test F1: [0.8803, 0.8674]
+  Test Micro Metric(PREC, REC, F1):[0.8742, 0.8742, 0.8742], Test Macro Metric(PREC, REC, F1):[0.874, 0.8737, 0.8738]
+Epoch: 065, LR: 0.001000, Loss: 0.0264655, Val ERROR: 6.8377547, Test ERROR: 0.3884174
+  Train ACC: 0.9915, Validation ACC: 0.0000, Test ACC: 0.8791
+  Test PREC: [0.8607, 0.9024], Test REC: [0.9179, 0.8365], Test F1: [0.8884, 0.8682]
+  Test Micro Metric(PREC, REC, F1):[0.8791, 0.8791, 0.8791], Test Macro Metric(PREC, REC, F1):[0.8816, 0.8772, 0.8783]
+Epoch: 066, LR: 0.001000, Loss: 0.0175307, Val ERROR: 8.4317055, Test ERROR: 0.4414369
+  Train ACC: 0.9959, Validation ACC: 0.0000, Test ACC: 0.8725
+  Test PREC: [0.8668, 0.8793], Test REC: [0.8942, 0.8487], Test F1: [0.8802, 0.8637]
+  Test Micro Metric(PREC, REC, F1):[0.8725, 0.8725, 0.8725], Test Macro Metric(PREC, REC, F1):[0.873, 0.8714, 0.872]
+Epoch: 067, LR: 0.001000, Loss: 0.0311773, Val ERROR: 6.5841565, Test ERROR: 0.4449740
+  Train ACC: 0.9903, Validation ACC: 0.0000, Test ACC: 0.8791
+  Test PREC: [0.8835, 0.8743], Test REC: [0.8863, 0.8713], Test F1: [0.8849, 0.8728]
+  Test Micro Metric(PREC, REC, F1):[0.8791, 0.8791, 0.8791], Test Macro Metric(PREC, REC, F1):[0.8789, 0.8788, 0.8788]
+Epoch: 068, LR: 0.001000, Loss: 0.0340308, Val ERROR: 6.3864470, Test ERROR: 0.4945272
+  Train ACC: 0.9861, Validation ACC: 0.0000, Test ACC: 0.8783
+  Test PREC: [0.8366, 0.9403], Test REC: [0.9542, 0.7948], Test F1: [0.8915, 0.8615]
+  Test Micro Metric(PREC, REC, F1):[0.8783, 0.8783, 0.8783], Test Macro Metric(PREC, REC, F1):[0.8884, 0.8745, 0.8765]
+Epoch: 069, LR: 0.001000, Loss: 0.0455562, Val ERROR: 5.1197753, Test ERROR: 0.4259395
+  Train ACC: 0.9853, Validation ACC: 0.0000, Test ACC: 0.8775
+  Test PREC: [0.8636, 0.8946], Test REC: [0.91, 0.8417], Test F1: [0.8862, 0.8674]
+  Test Micro Metric(PREC, REC, F1):[0.8775, 0.8775, 0.8775], Test Macro Metric(PREC, REC, F1):[0.8791, 0.8758, 0.8768]
+Epoch: 070, LR: 0.001000, Loss: 0.0347456, Val ERROR: 5.8208528, Test ERROR: 0.3942490
+  Train ACC: 0.9925, Validation ACC: 0.0000, Test ACC: 0.8800
+  Test PREC: [0.891, 0.8682], Test REC: [0.8784, 0.8817], Test F1: [0.8846, 0.8749]
+  Test Micro Metric(PREC, REC, F1):[0.88, 0.88, 0.88], Test Macro Metric(PREC, REC, F1):[0.8796, 0.88, 0.8798]
+Epoch: 071, LR: 0.001000, Loss: 0.0285169, Val ERROR: 6.3979940, Test ERROR: 0.4122844
+  Train ACC: 0.9917, Validation ACC: 0.0000, Test ACC: 0.8750
+  Test PREC: [0.8619, 0.8911], Test REC: [0.9068, 0.84], Test F1: [0.8838, 0.8648]
+  Test Micro Metric(PREC, REC, F1):[0.875, 0.875, 0.875], Test Macro Metric(PREC, REC, F1):[0.8765, 0.8734, 0.8743]
+Epoch: 072, LR: 0.001000, Loss: 0.0528877, Val ERROR: 5.7314525, Test ERROR: 0.4223559
+  Train ACC: 0.9872, Validation ACC: 0.0000, Test ACC: 0.8725
+  Test PREC: [0.8656, 0.8807], Test REC: [0.8957, 0.847], Test F1: [0.8804, 0.8635]
+  Test Micro Metric(PREC, REC, F1):[0.8725, 0.8725, 0.8725], Test Macro Metric(PREC, REC, F1):[0.8731, 0.8713, 0.872]
+Epoch: 073, LR: 0.001000, Loss: 0.0471186, Val ERROR: 6.2766113, Test ERROR: 0.4390619
+  Train ACC: 0.9857, Validation ACC: 0.0000, Test ACC: 0.8659
+  Test PREC: [0.8285, 0.9206], Test REC: [0.9384, 0.7861], Test F1: [0.88, 0.848]
+  Test Micro Metric(PREC, REC, F1):[0.8659, 0.8659, 0.8659], Test Macro Metric(PREC, REC, F1):[0.8745, 0.8622, 0.864]
+Epoch: 074, LR: 0.001000, Loss: 0.0330354, Val ERROR: 8.1059561, Test ERROR: 0.5018433
+  Train ACC: 0.9880, Validation ACC: 0.0000, Test ACC: 0.8825
+  Test PREC: [0.8553, 0.9188], Test REC: [0.9336, 0.8261], Test F1: [0.8927, 0.87]
+  Test Micro Metric(PREC, REC, F1):[0.8825, 0.8825, 0.8825], Test Macro Metric(PREC, REC, F1):[0.887, 0.8799, 0.8814]
+Epoch: 075, LR: 0.001000, Loss: 0.0187340, Val ERROR: 5.6631975, Test ERROR: 0.3886105
+  Train ACC: 0.9965, Validation ACC: 0.0000, Test ACC: 0.8858
+  Test PREC: [0.8722, 0.9024], Test REC: [0.9163, 0.8522], Test F1: [0.8937, 0.8766]
+  Test Micro Metric(PREC, REC, F1):[0.8858, 0.8858, 0.8858], Test Macro Metric(PREC, REC, F1):[0.8873, 0.8842, 0.8851]
+Epoch: 076, LR: 0.001000, Loss: 0.1274509, Val ERROR: 7.2092681, Test ERROR: 0.5312757
+  Train ACC: 0.9567, Validation ACC: 0.0000, Test ACC: 0.8535
+  Test PREC: [0.8324, 0.8812], Test REC: [0.9021, 0.8], Test F1: [0.8658, 0.8387]
+  Test Micro Metric(PREC, REC, F1):[0.8535, 0.8535, 0.8535], Test Macro Metric(PREC, REC, F1):[0.8568, 0.851, 0.8522]
+Epoch: 077, LR: 0.001000, Loss: 0.0646015, Val ERROR: 7.9291968, Test ERROR: 0.5074255
+  Train ACC: 0.9762, Validation ACC: 0.0000, Test ACC: 0.8618
+  Test PREC: [0.8174, 0.9304], Test REC: [0.9479, 0.767], Test F1: [0.8778, 0.8408]
+  Test Micro Metric(PREC, REC, F1):[0.8618, 0.8618, 0.8618], Test Macro Metric(PREC, REC, F1):[0.8739, 0.8574, 0.8593]
+Epoch: 078, LR: 0.001000, Loss: 0.0296552, Val ERROR: 3.8080006, Test ERROR: 0.4041952
+  Train ACC: 0.9919, Validation ACC: 0.0000, Test ACC: 0.8791
+  Test PREC: [0.8799, 0.8783], Test REC: [0.891, 0.8661], Test F1: [0.8854, 0.8722]
+  Test Micro Metric(PREC, REC, F1):[0.8791, 0.8791, 0.8791], Test Macro Metric(PREC, REC, F1):[0.8791, 0.8785, 0.8788]
+Epoch: 079, LR: 0.001000, Loss: 0.0230409, Val ERROR: 5.3503165, Test ERROR: 0.3996632
+  Train ACC: 0.9942, Validation ACC: 0.0000, Test ACC: 0.8882
+  Test PREC: [0.8773, 0.9015], Test REC: [0.9147, 0.8591], Test F1: [0.8956, 0.8798]
+  Test Micro Metric(PREC, REC, F1):[0.8882, 0.8882, 0.8882], Test Macro Metric(PREC, REC, F1):[0.8894, 0.8869, 0.8877]
+Epoch: 080, LR: 0.001000, Loss: 0.0282919, Val ERROR: 6.4966459, Test ERROR: 0.3873834
+  Train ACC: 0.9938, Validation ACC: 0.0000, Test ACC: 0.8891
+  Test PREC: [0.8611, 0.9265], Test REC: [0.94, 0.833], Test F1: [0.8988, 0.8773]
+  Test Micro Metric(PREC, REC, F1):[0.8891, 0.8891, 0.8891], Test Macro Metric(PREC, REC, F1):[0.8938, 0.8865, 0.888]
+Epoch: 081, LR: 0.001000, Loss: 0.0225195, Val ERROR: 6.0589886, Test ERROR: 0.4129866
+  Train ACC: 0.9952, Validation ACC: 0.0000, Test ACC: 0.8907
+  Test PREC: [0.879, 0.9049], Test REC: [0.9179, 0.8609], Test F1: [0.898, 0.8824]
+  Test Micro Metric(PREC, REC, F1):[0.8907, 0.8907, 0.8907], Test Macro Metric(PREC, REC, F1):[0.892, 0.8894, 0.8902]
+Epoch: 082, LR: 0.001000, Loss: 0.0357394, Val ERROR: 7.0922127, Test ERROR: 0.4861295
+  Train ACC: 0.9923, Validation ACC: 0.0000, Test ACC: 0.8725
+  Test PREC: [0.8946, 0.8502], Test REC: [0.8578, 0.8887], Test F1: [0.8758, 0.869]
+  Test Micro Metric(PREC, REC, F1):[0.8725, 0.8725, 0.8725], Test Macro Metric(PREC, REC, F1):[0.8724, 0.8733, 0.8724]
+Epoch: 083, LR: 0.001000, Loss: 0.0472202, Val ERROR: 6.0707817, Test ERROR: 0.4866089
+  Train ACC: 0.9861, Validation ACC: 0.0000, Test ACC: 0.8651
+  Test PREC: [0.8348, 0.9071], Test REC: [0.9258, 0.7983], Test F1: [0.8779, 0.8492]
+  Test Micro Metric(PREC, REC, F1):[0.8651, 0.8651, 0.8651], Test Macro Metric(PREC, REC, F1):[0.8709, 0.862, 0.8636]
+Epoch: 084, LR: 0.001000, Loss: 0.0723102, Val ERROR: 5.6828609, Test ERROR: 0.5188359
+  Train ACC: 0.9942, Validation ACC: 0.0000, Test ACC: 0.8750
+  Test PREC: [0.8652, 0.8869], Test REC: [0.9021, 0.8452], Test F1: [0.8832, 0.8655]
+  Test Micro Metric(PREC, REC, F1):[0.875, 0.875, 0.875], Test Macro Metric(PREC, REC, F1):[0.876, 0.8736, 0.8744]
+Epoch: 085, LR: 0.001000, Loss: 0.0174574, Val ERROR: 4.7912707, Test ERROR: 0.4065556
+  Train ACC: 0.9973, Validation ACC: 0.0000, Test ACC: 0.8800
+  Test PREC: [0.8686, 0.8938], Test REC: [0.9084, 0.8487], Test F1: [0.888, 0.8707]
+  Test Micro Metric(PREC, REC, F1):[0.88, 0.88, 0.88], Test Macro Metric(PREC, REC, F1):[0.8812, 0.8785, 0.8793]
+Epoch: 086, LR: 0.001000, Loss: 0.0393095, Val ERROR: 5.0912943, Test ERROR: 0.3636301
+  Train ACC: 0.9911, Validation ACC: 0.0000, Test ACC: 0.8849
+  Test PREC: [0.8709, 0.9022], Test REC: [0.9163, 0.8504], Test F1: [0.893, 0.8756]
+  Test Micro Metric(PREC, REC, F1):[0.8849, 0.8849, 0.8849], Test Macro Metric(PREC, REC, F1):[0.8865, 0.8834, 0.8843]
+Epoch: 087, LR: 0.001000, Loss: 0.0398166, Val ERROR: 6.8632975, Test ERROR: 0.4423284
+  Train ACC: 0.9880, Validation ACC: 0.0000, Test ACC: 0.8717
+  Test PREC: [0.8589, 0.8875], Test REC: [0.9036, 0.8365], Test F1: [0.8807, 0.8612]
+  Test Micro Metric(PREC, REC, F1):[0.8717, 0.8717, 0.8717], Test Macro Metric(PREC, REC, F1):[0.8732, 0.8701, 0.871]
+Epoch: 088, LR: 0.001000, Loss: 0.0187847, Val ERROR: 4.0750513, Test ERROR: 0.4126262
+  Train ACC: 0.9973, Validation ACC: 0.0000, Test ACC: 0.8733
+  Test PREC: [0.8593, 0.8907], Test REC: [0.9068, 0.8365], Test F1: [0.8824, 0.8628]
+  Test Micro Metric(PREC, REC, F1):[0.8733, 0.8733, 0.8733], Test Macro Metric(PREC, REC, F1):[0.875, 0.8717, 0.8726]
+Epoch: 089, LR: 0.001000, Loss: 0.0554911, Val ERROR: 7.4472914, Test ERROR: 0.4014603
+  Train ACC: 0.9851, Validation ACC: 0.0000, Test ACC: 0.8717
+  Test PREC: [0.8621, 0.8832], Test REC: [0.8989, 0.8417], Test F1: [0.8801, 0.862]
+  Test Micro Metric(PREC, REC, F1):[0.8717, 0.8717, 0.8717], Test Macro Metric(PREC, REC, F1):[0.8727, 0.8703, 0.8711]
+Epoch: 090, LR: 0.001000, Loss: 0.0710816, Val ERROR: 7.4653416, Test ERROR: 0.4775396
+  Train ACC: 0.9758, Validation ACC: 0.0000, Test ACC: 0.8651
+  Test PREC: [0.8497, 0.8843], Test REC: [0.9021, 0.8243], Test F1: [0.8751, 0.8533]
+  Test Micro Metric(PREC, REC, F1):[0.8651, 0.8651, 0.8651], Test Macro Metric(PREC, REC, F1):[0.867, 0.8632, 0.8642]
+Epoch: 091, LR: 0.001000, Loss: 0.0617321, Val ERROR: 5.6951528, Test ERROR: 0.3745939
+  Train ACC: 0.9801, Validation ACC: 0.0000, Test ACC: 0.8758
+  Test PREC: [0.8768, 0.8748], Test REC: [0.8878, 0.8626], Test F1: [0.8823, 0.8687]
+  Test Micro Metric(PREC, REC, F1):[0.8758, 0.8758, 0.8758], Test Macro Metric(PREC, REC, F1):[0.8758, 0.8752, 0.8755]
+Epoch: 092, LR: 0.001000, Loss: 0.0298169, Val ERROR: 5.2500501, Test ERROR: 0.3775326
+  Train ACC: 0.9921, Validation ACC: 0.0000, Test ACC: 0.8800
+  Test PREC: [0.8861, 0.8733], Test REC: [0.8847, 0.8748], Test F1: [0.8854, 0.874]
+  Test Micro Metric(PREC, REC, F1):[0.88, 0.88, 0.88], Test Macro Metric(PREC, REC, F1):[0.8797, 0.8797, 0.8797]
+Epoch: 093, LR: 0.001000, Loss: 0.0267605, Val ERROR: 5.0489202, Test ERROR: 0.4138296
+  Train ACC: 0.9950, Validation ACC: 0.0000, Test ACC: 0.8684
+  Test PREC: [0.8569, 0.8824], Test REC: [0.8989, 0.8348], Test F1: [0.8774, 0.8579]
+  Test Micro Metric(PREC, REC, F1):[0.8684, 0.8684, 0.8684], Test Macro Metric(PREC, REC, F1):[0.8696, 0.8668, 0.8677]
+Epoch: 094, LR: 0.001000, Loss: 0.0181969, Val ERROR: 3.7042050, Test ERROR: 0.4190223
+  Train ACC: 0.9969, Validation ACC: 0.0000, Test ACC: 0.8833
+  Test PREC: [0.8868, 0.8794], Test REC: [0.891, 0.8748], Test F1: [0.8889, 0.8771]
+  Test Micro Metric(PREC, REC, F1):[0.8833, 0.8833, 0.8833], Test Macro Metric(PREC, REC, F1):[0.8831, 0.8829, 0.883]
+Epoch: 095, LR: 0.001000, Loss: 0.0148538, Val ERROR: 6.2996912, Test ERROR: 0.4274200
+  Train ACC: 0.9979, Validation ACC: 0.0000, Test ACC: 0.8841
+  Test PREC: [0.881, 0.8877], Test REC: [0.9005, 0.8661], Test F1: [0.8906, 0.8768]
+  Test Micro Metric(PREC, REC, F1):[0.8841, 0.8841, 0.8841], Test Macro Metric(PREC, REC, F1):[0.8843, 0.8833, 0.8837]
+Epoch: 096, LR: 0.001000, Loss: 0.0357384, Val ERROR: 6.1949444, Test ERROR: 0.4570360
+  Train ACC: 0.9907, Validation ACC: 0.0000, Test ACC: 0.8742
+  Test PREC: [0.8563, 0.8968], Test REC: [0.9131, 0.8313], Test F1: [0.8838, 0.8628]
+  Test Micro Metric(PREC, REC, F1):[0.8742, 0.8742, 0.8742], Test Macro Metric(PREC, REC, F1):[0.8766, 0.8722, 0.8733]
+Epoch: 097, LR: 0.001000, Loss: 0.0183356, Val ERROR: 8.1665974, Test ERROR: 0.4366863
+  Train ACC: 0.9963, Validation ACC: 0.0000, Test ACC: 0.8733
+  Test PREC: [0.854, 0.8981], Test REC: [0.9147, 0.8278], Test F1: [0.8833, 0.8615]
+  Test Micro Metric(PREC, REC, F1):[0.8733, 0.8733, 0.8733], Test Macro Metric(PREC, REC, F1):[0.876, 0.8713, 0.8724]
+Epoch: 098, LR: 0.001000, Loss: 0.0138595, Val ERROR: 5.2579346, Test ERROR: 0.3882947
+  Train ACC: 0.9990, Validation ACC: 0.0000, Test ACC: 0.8841
+  Test PREC: [0.8957, 0.8718], Test REC: [0.8815, 0.887], Test F1: [0.8885, 0.8793]
+  Test Micro Metric(PREC, REC, F1):[0.8841, 0.8841, 0.8841], Test Macro Metric(PREC, REC, F1):[0.8837, 0.8842, 0.8839]
+Epoch: 099, LR: 0.001000, Loss: 0.0304459, Val ERROR: 8.7934980, Test ERROR: 0.4873352
+  Train ACC: 0.9913, Validation ACC: 0.0000, Test ACC: 0.8775
+  Test PREC: [0.8509, 0.913], Test REC: [0.9289, 0.8209], Test F1: [0.8882, 0.8645]
+  Test Micro Metric(PREC, REC, F1):[0.8775, 0.8775, 0.8775], Test Macro Metric(PREC, REC, F1):[0.882, 0.8749, 0.8763]
+Epoch: 100, LR: 0.001000, Loss: 0.0361555, Val ERROR: 7.9120426, Test ERROR: 0.4340308
+  Train ACC: 0.9890, Validation ACC: 0.0000, Test ACC: 0.8667
+  Test PREC: [0.8565, 0.8791], Test REC: [0.8957, 0.8348], Test F1: [0.8757, 0.8564]
+  Test Micro Metric(PREC, REC, F1):[0.8667, 0.8667, 0.8667], Test Macro Metric(PREC, REC, F1):[0.8678, 0.8653, 0.866]
+

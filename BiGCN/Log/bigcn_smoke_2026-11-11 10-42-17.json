@@ -1,0 +1,51 @@
+{
+  "model": "BiGCN (official Net, DRWeiboV3 adapted)",
+  "protocol": "802 split / 10 runs x 100 epochs / last-10 mean",
+  "config": {
+    "lr": 0.0005,
+    "weight_decay": 0.0001,
+    "batch_size": 16,
+    "hidden": 64,
+    "vocab_size": 5000,
+    "features": "jieba BoW, TRAIN-only top-5000 vocab",
+    "torch_initial_seed": 412526698561600,
+    "device": "cuda:0"
+  },
+  "source_logs": "RAGCL Main/sort.py 802 split filenames",
+  "runs": 1,
+  "epochs": 2,
+  "record": [
+    {
+      "run": 0,
+      "epochs_recorded": 3,
+      "test accs": [
+        0.4801,
+        0.8129,
+        0.8609
+      ],
+      "macro f1s": [
+        0.3391,
+        0.8124,
+        0.8607
+      ],
+      "macro ps": [
+        0.5624,
+        0.8243,
+        0.8605
+      ],
+      "macro rs": [
+        0.5035,
+        0.8173,
+        0.861
+      ],
+      "train losses": [
+        0.502434,
+        0.285057
+      ],
+      "final10_mean_acc": 0.2154,
+      "final10_mean_macro_f1": 0.2012,
+      "best_epoch_acc": 0.8609,
+      "elapsed_seconds": 142.1
+    }
+  ]
+}
